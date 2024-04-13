@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML mental health</title>
+  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+ <div class="login">
+	<h1>Mental Health Prediction </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+	 <form action="/prediction" method="post">
+		
+
+    	<input type="text" name="Age" placeholder="Age" required="required" /><br>
+        <input type="text" name="Gender" placeholder="Gender" required="required" /><br>
+		<input type="text" name="self_employed" placeholder="self_employed" required="required" /><br>
+
+		<input type="text" name="family_hostory" placeholder="family_history" required="required" /><br>
+		<input type="text" name="work_interfere" placeholder="work_interfere" required="required" /><br>
+		<input type="text" name="no_employees" placeholder="no_employees" required="required" /><br>
+
+		<input type="text" name="remote_work" placeholder="remote_work" required="required" /><br>
+		<input type="text" name="benefits" placeholder="benefits" required="required" /><br>
+		<input type="text" name="tech_company" placeholder="tech_company" required="required" /><br>
+
+		<input type="text" name="care_options" placeholder="care_options" required="required" /><br>
+		<input type="text" name="wellness_program" placeholder="wellness_program" required="required" /><br>
+		<input type="text" name="seek_help" placeholder="seek_help" required="required" /><br>
+
+		<input type="text" name="anonymity" placeholder="anonymity" required="required" /><br>
+		<input type="text" name="leave" placeholder="leave" required="required" /><br>
+		<input type="text" name="mental_health_consequence" placeholder="mental_health_consequence" required="required" /><br>
+
+		<input type="text" name="phys_health_consequence" placeholder="phys_health_consequence" required="required" /><br>
+		<input type="text" name="coworkers" placeholder="coworkers" required="required" /><br>
+		<input type="text" name="supervisor" placeholder="supervisor" required="required" /><br>
+
+		<input type="text" name="mental_health_interview" placeholder="mental_health_interview" required="required" /><br>
+		<input type="text" name="phys_health_interview" placeholder="phys_health_interview" required="required" /><br>
+		<input type="text" name="mental_vs_physical" placeholder="mental_vs_physical" required="required" /><br>
+		<input type="text" name="obs_consequence" placeholder="obs_consequence" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   <!-- Display the prediction here -->
+   
+
+ </div>
+
+
+</body>
+</html>
